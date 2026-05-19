@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(14, 165, 233, 0.22),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(34, 197, 94, 0.18),
+      transparent 22%
+    ),
+    linear-gradient(180deg, #eff6ff 0%, #f8fafc 45%, #e2e8f0 100%);
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.leaflet-container {
+  border-radius: 1rem;
+}
+
+.city-marker {
+  background: transparent;
+  border: none;
+}
+
+.city-marker__dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #e0f2fe 0%,
+    #0ea5e9 45%,
+    #0284c7 100%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 22px rgba(14, 165, 233, 0.35);
+  transform: translate(3px, 3px);
+}
